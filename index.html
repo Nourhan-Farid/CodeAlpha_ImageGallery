@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PixelView</title>
+        <!--?========> Font Awesome <========-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--?========> Animate.CSS <========-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!--?========> Google Fonts <========-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <!--?========> BoxIcon  <========-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+        <!--?========> Bootstrap Style Sheet <========-->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+
+        <!--?========> Main style Sheet <========-->
+        <link href="CSS/output.css" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+
+        <!--?========> Favicon <========-->
+
+        <link rel="shortcut icon" href="images/apple.png" type="image/x-icon">
+    </head>
+
+    <body class="h-screen overflow-hidden">
+
+        <!-- ^ Start of NavBar -->
+        <nav class="navbar bg-transparent z-[100] absolute right-0 left-0 top-0">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white font-bold" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a
+                                class="text-lg text-center flex justify-start items-center text-[#842072] font-semibold">Home</a>
+                        </li>
+                        <li><a href="/Explore.html"
+                                class="text-lg text-center flex justify-start items-center text-[#842072] font-semibold">Explore</a>
+                        </li>
+                        <li><a href="/index.html"
+                                class="text-lg text-center flex justify-start items-center text-[#842072] font-semibold">Gallery</a>
+                        </li>
+                        <li><a
+                                class="text-lg text-center flex justify-start items-center text-[#842072] font-semibold">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- [#240203] [#fffd20]-->
+            <div class="navbar-center">
+                <ul class="menu menu-horizontal px-2 hidden lg:flex">
+                    <li><a class="nav-link text-white text-lg font-semibold mx-12">Home</a></li>
+                    <li><a href="/Explore.html" class="nav-link text-white text-lg font-semibold mx-12">Explore</a></li>
+                </ul>
+                <a class="btn btn-ghost text-3xl text-[#6f095c] font-['Great_Vibes'] font-extrabold">Pixel View</a>
+                <ul class="menu menu-horizontal px-2 hidden lg:flex">
+                    <li><a href="/index.html" class="nav-link text-white text-lg font-semibold mx-12">Gallery</a></li>
+                    <li><a class="nav-link text-white text-lg font-semibold mx-12">Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a href="#" class="text-xl btn btn-ghost lg:hidden text-white font-bold"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+        <!-- ^ End of NavBar -->
+        <!--& =================================================================================================== -->
+
+        <!-- * Start of Carousel -->
+
+        <div class="m-0 w-full h-screen">
+            <div class="carousel z-0 m-0 w-screen h-full overflow-hidden relative">
+
+                <div class="list">
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider9.webp')]">
+                        <div class="content">
+                            <div class="title">Purple</div>
+                            <div class="name">vervain</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider2.jpeg')]">
+
+                        <div class="content">
+                            <div class="title">Orange</div>
+                            <div class="name">Roses</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider3.jpeg')]">
+
+                        <div class="content">
+                            <div class="title">Park</div>
+                            <div class="name">Wheel</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider10.avif')]">
+
+                        <div class="content">
+                            <div class="title">Mountain</div>
+                            <div class="name">Trip</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider12.avif')]">
+
+                        <div class="content">
+                            <div class="title">Wonderful</div>
+                            <div class="name">Bridge</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider6.jpg')]">
+
+                        <div class="content">
+                            <div class="title">Balloons</div>
+                            <div class="name">Flight</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/kingfirser2.jpeg')]">
+
+                        <div class="content">
+                            <div class="title">Kingfisher</div>
+                            <div class="name">Bird</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider8.jpg')]">
+
+                        <div class="content">
+                            <div class="title">Violet</div>
+                            <div class="name">Daisies</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/heron.jpeg')]">
+
+                        <div class="content">
+                            <div class="title">Black</div>
+                            <div class="name">HERON</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/butterfly1.jpeg')]">
+
+                        <div class="content">
+                            <div class="title">Blue</div>
+                            <div class="name">BUTTERFLY</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/parrot2.jpg')]">
+
+                        <div class="content">
+                            <div class="title">Red</div>
+                            <div class="name">PARROT</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        class="item w-48 h-64 absolute top-[80%] -translate-y-[70%] left-[70%] rounded-3xl shadow-2xl shadow-black bg-cover bg-top z-[100] transition-all duration-1000 bg-[url('/images/slider13.jpg')]">
+
+                        <div class="content">
+                            <div class="title">Blue</div>
+                            <div class="name">Flower</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa
+                                similique
+                                consequuntur, reprehenderit dicta repudiandae.</div>
+                            <div
+                                class="btn bg-transparent border-none opacity-0 animate-[animate_1s_ease-in-out_1.2s_1_forwards] hover:bg-transparent">
+                                <button
+                                    class="ring-1 ring-white hover:ring-0 py-2 px-6 border-[3px] me-4 border-white cursor-pointer text-lg bg-transparent rounded-full hover:border-[#fffd20] text-white hover:border-[3px] hover:transition-all ">See
+                                    More</button>
+                                <button
+                                    class="ring-2 ring-[#fffd20] hover:ring-0 py-2 px-6 border-2 border-[#fffd20] cursor-pointer text-lg bg-transparent rounded-full hover:bg-[#fffd20] hover:border-2 text-white hover:text-[#842072] hover:border-transparent hover:transition-all ">Subscribe</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ~ next prev button-->
+                <div class="arrows">
+                    <button
+                        class="prev group border-2.5 hover:border-2.5 border-white hover:border-[#fffd20] rounded-full ring-2 ring-white hover:ring-0 hover:rounded-full bg-transparent hover:bg-[#fffd20] w-12 h-12 outline-none cursor-pointer transition-all duration-500 "><i
+                            class="fa-solid fa-caret-left text-white group-hover:text-[#842072]"></i></button>
+                    <button
+                        class="next group border-2.5 hover:border-2.5 border-white hover:border-[#fffd20] rounded-full ring-2 ring-white hover:ring-0 hover:rounded-full bg-transparent hover:bg-[#fffd20] w-12 h-12 outline-none cursor-pointer transition-all duration-500 "><i
+                            class="fa-solid fa-caret-right text-white group-hover:text-[#842072]"></i></button>
+                </div>
+
+
+                <!-- ~ time running -->
+                <div
+                    class="timeRunning m-0 absolute z-[1000] w-[0%] h-1 bg-[#842072] left-0 top-0 animate-[runningTime_5s_linear_1_forwards]">
+                </div>
+
+            </div>
+            <!-- * End of Carousel -->
+            <!--& =================================================================================================== -->
+
+            <!--!========> JS File <========-->
+
+            <script src="JS/main.js"></script>
+    </body>
+
+</html>
